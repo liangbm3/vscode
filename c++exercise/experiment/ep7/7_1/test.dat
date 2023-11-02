@@ -1,0 +1,11 @@
+Mission Description
+MISSION 9 of the International Aerial Robotics Competition involved the demonstration of technologies that enabled long distance rapid transport of heavy items, removal and replacement of tightly-integrated heavy objects on a moving platform by a fully autonomous air vehicle while in flight and in very close proximity to fixed and moving obstacles. The round trip distance of 6 km and the substitution of a heavy electronics component had to be achieved in under 9 minutes.
+In particular, a fully autonomous air vehicle carrying a replacement "communications module" has to fly 3km to apprehend a Hunter-Killer vessel sailing in up to Sea State 3. The aerial robot then has to remove the communications module from the Hunter-Killer vessel's conning tower mast (dropping it on site) and replace it with the communications module payload that it is carrying. Upon completion of the module swap, the aerial robot has to return to its point of origin and land.
+Speed is critical. Due to fuel and energy constraints, as well as the expected time that the Hunter-Killer vessel is within range, the entire mission must be completed in 9 minutes or less.
+The design team’s task is to create an aerial robot that can:
+Fly fully autonomously
+Use ONLY onboard computing (no data links)
+Avoid other aerial robots and physical obstacles
+Conduct the mission successfully (replace the module and return home) in under 9 minutes.
+Results
+During the IARC Mission 9, a number of teams attempted to conduct the mission at their home universities. In a departure from previous IARC conduct at one of two venues (American or Asia/Pacific Venue) was necessitated by COVID travel restrictions. Special documentation and authentication procedures were put in place to allow MISSION 9 to be conducted in this fashion. The team putting forth the best performance was that of the Ascend team from the Norwegian University of Science and Technology (NTNU). This team demonstrated all of the required behaviors called out in the MISSION 9 Official Rules on several authenticated runs, but on its final scoring run, suffered a failure of equipment that had been demonstrated successfully on prior runs. In the end, however, the aggregate performance was judged to qualify as a win for the team.
