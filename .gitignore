@@ -1,3 +1,5 @@
 /build
 output/
 /.vscode
+/cmake-build-debug-mingw
+/.idea

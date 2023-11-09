@@ -1,0 +1,60 @@
+cmake_minimum_required(VERSION 3.26)
+project(c__)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(c++exercise/experiment/ep6/6-3)
+include_directories(c++exercise/experiment/ep6/6_2)
+include_directories(c++exercise/experiment/ep6/6_4)
+
+add_executable(c__
+        c++exercise/basic/1.cpp
+        c++exercise/basic/2.cpp
+        c++exercise/basic/Blackjack.cpp
+        c++exercise/basic/calculate_e_by_Taylor.cpp
+        c++exercise/basic/exercise_of_char.cpp
+        c++exercise/basic/test.cpp
+        c++exercise/basic/the_probability_of_shooting.cpp
+        c++exercise/basic/the_value_of_pi.cpp
+        c++exercise/experiment/ep2/2_1.cpp
+        c++exercise/experiment/ep2/2_2_1.cpp
+        c++exercise/experiment/ep2/2_2_2.cpp
+        c++exercise/experiment/ep2/2_2_3.cpp
+        c++exercise/experiment/ep2/2_3.cpp
+        c++exercise/experiment/ep2/2_4_1.cpp
+        c++exercise/experiment/ep2/2_4_2.cpp
+        c++exercise/experiment/ep2/2_5.cpp
+        c++exercise/experiment/ep3/filetest/keyword.dat
+        c++exercise/experiment/ep3/filetest/result.dat
+        c++exercise/experiment/ep3/filetest/tempdata.dat
+        c++exercise/experiment/ep3/filetest/test1.dat
+        c++exercise/experiment/ep3/filetest/test2.dat
+        c++exercise/experiment/ep3/3_1.cpp
+        c++exercise/experiment/ep3/3_2.cpp
+        c++exercise/experiment/ep3/3_3.cpp
+        c++exercise/experiment/ep3/3_4.cpp
+        c++exercise/experiment/ep3/3_5.cpp
+        c++exercise/experiment/ep4/4_1.cpp
+        c++exercise/experiment/ep4/4_2.cpp
+        c++exercise/experiment/ep4/4_3.cpp
+        c++exercise/experiment/ep4/4_4.cpp
+        c++exercise/experiment/ep4/4_5.cpp
+        c++exercise/experiment/ep5/5_1.cpp
+        c++exercise/experiment/ep5/5_2.cpp
+        c++exercise/experiment/ep5/5_3.cpp
+        c++exercise/experiment/ep5/5_4.cpp
+        c++exercise/experiment/ep6/6-3/main.cpp
+        c++exercise/experiment/ep6/6-3/mytriangle.cpp
+        c++exercise/experiment/ep6/6-3/mytriangle.h
+        c++exercise/experiment/ep6/6_2/main.cpp
+        c++exercise/experiment/ep6/6_2/mytemperature.cpp
+        c++exercise/experiment/ep6/6_2/mytemperature.h
+        c++exercise/experiment/ep6/6_4/key.cpp
+        c++exercise/experiment/ep6/6_4/key.h
+        c++exercise/experiment/ep6/6_4/main.cpp
+        c++exercise/experiment/ep6/6_1.cpp
+        c++exercise/experiment/ep6/6_5.cpp
+        c++exercise/experiment/ep7/7_1/main.cpp
+        c++exercise/experiment/ep7/7_1/test.dat
+        c++exercise/experiment/ep7/7_2/main.cpp
+        c++exercise/experiment/ep7/7_3/main.cpp)

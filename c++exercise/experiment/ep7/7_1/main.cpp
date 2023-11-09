@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-void LetterCount(string line, int count);
+void LetterCount(string line);
 void LineCount(istream &file, int &count);
 
 int main()
@@ -16,20 +16,20 @@ int main()
     return 0;
 }
 
-void LetterCount(string line, int count)
+void LetterCount(string line)
 {
-    count = line.length();
+    int count = line.length();
     cout << "has" << count << "characters;\n";
 }
 
 void LineCount(istream &file, int &count)
 {
     string line;
-    while (file)
+    while (!file.eof())
     {
         getline(file, line);
         count++;
         cout << "Line" << count;
-        LetterCount(line, count);
+        LetterCount(line);
     }
 }
