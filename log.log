@@ -1,0 +1,8 @@
+7784 - 2024-04-01 20:17:42,345 - ERROR - error，一般用来打印一些错误信息-log_testing
+7784 - 2024-04-01 20:17:42,346 - CRITICAL - critical，用来打印一些致命的错误信息，等级最高-log_testing
+4016 - 2024-04-01 20:19:17,156 - log_testing - ERROR - error，一般用来打印一些错误信息
+4016 - 2024-04-01 20:19:17,157 - log_testing - CRITICAL - critical，用来打印一些致命的错误信息，等级最高
+28220 - 2024-04-01 20:21:33,011 - log_testing - INFO - alalla
+28220 - 2024-04-01 20:21:33,011 - log_testing - WARNING - waring，用来用来打印警告信息
+28220 - 2024-04-01 20:21:33,011 - log_testing - ERROR - error，一般用来打印一些错误信息
+28220 - 2024-04-01 20:21:33,011 - log_testing - CRITICAL - critical，用来打印一些致命的错误信息，等级最高
