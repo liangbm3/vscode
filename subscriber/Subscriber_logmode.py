@@ -7,7 +7,7 @@ class Subscriber():
     def __init__(self,session,target_name_list,target_time_list) -> None: 
         self.target_name_list=target_name_list
         self.target_time_list=target_time_list
-        self.logger = Logger("./log/subscriber.log")
+        self.logger = Logger("./log/"+str(datetime.date.today())+".log")
         self.headers={
             "Accept": "application/json, text/javascript, */*; q=0.01",
             "Accept-Language": "zh-CN,zh;q=0.9",

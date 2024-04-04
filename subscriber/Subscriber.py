@@ -89,7 +89,7 @@ class Subscriber():
 
             
 if __name__=="__main__":
-    session="c0fd3072-0a02-45ee-99bf-91e631a07889"
+    session="30775313-a75f-4f21-a75e-7ecee985e10b"
     time_=["20","21","19"]
     name=["场地2","场地3","场地4","场地7","场地6","场地9","场地8","场地5"]
     sb=Subscriber(session=session,target_name_list=name,target_time_list=time_) 

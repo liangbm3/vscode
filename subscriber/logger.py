@@ -3,10 +3,10 @@ import os
 
 class Logger(object):
     def __init__(self, log_path):
-        if not os.path.exists(log_path):
-            os.mkdir('./log')
-            with open(log_path, "w") as f:
-                pass
+        # if not os.path.exists(log_path):
+        #     os.mkdir('./log')
+        #     with open(log_path, "w") as f:
+        #         pass
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.INFO)
         formatter = logging.Formatter(
