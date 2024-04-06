@@ -18,5 +18,4 @@ one_day_data=json_data["1d"]
 pattern2=r"(\d{2}日\d{2}时,)\w{3},(.*?级),\d"
 for i in range(len(one_day_data)):
     new_data=re.findall(pattern2,one_day_data[i])
-    print(one_day_data[i])
     print(str(new_data[0][0])+str(new_data[0][1]))
