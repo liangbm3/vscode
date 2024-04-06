@@ -1,5 +1,5 @@
 import requests
-
+from lxml import etree
 url="https://s.weibo.com/top/summary/"
 headers={
     "Host": "s.weibo.com",
@@ -30,4 +30,7 @@ cookies={
 
 }
 response=requests.get(url=url,headers=headers,cookies=cookies)
-print(response.text)
+tree=etree.HTML(response.text)
+for i in range(0,50):
+    r=tree.xpath('/html/body/div[1]/div[2]/div/div[2]/div[1]/table/tbody/tr['+str(i+1)+']/td[2]/a/text()')
+    print(r)
