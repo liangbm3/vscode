@@ -54,9 +54,8 @@ class Subscriber():
         data_json_object=json.loads(data_list)
         self.info_list=[]
         for info in data_json_object["object"]:
-            if str(info['stock']['time_no']).split(':')[0] in self.target_time_list and info["sname"] in self.target_name_list:
-                self.info_list.append([info["id"],info["stockid"],info["sname"],int(str(info['stock']['time_no']).split(':')[0])])
-        # print(self.info_list)
+            # if str(info['stock']['time_no']).split(':')[0] in self.target_time_list and info["sname"] in self.target_name_list:
+            self.info_list.append([info["id"],info["stockid"],info["sname"],int(str(info['stock']['time_no']).split(':')[0])])
     def sort_data(self):
         self.info_list_sorted=[]
         for target_name in self.target_name_list:
@@ -81,6 +80,8 @@ class Subscriber():
                 return
             else:
                 self.logger.logger.info(response.text)
+    def get_list(self):
+            return self.info_list
     def run(self):
         self.get_message()
         self.sort_data()

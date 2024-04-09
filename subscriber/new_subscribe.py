@@ -1,13 +1,17 @@
-import threading
-from Subscriber_logmode import Subscriber
+import requests
+import json
 import time
-class MyThread:
-    def __init__(self, thread_name):
-        self.thread_name = thread_name
-
-    def run(self):
-        print(f"Thread {self.thread_name} is running.")
-
+import datetime
+from Subscriber_logmode import Subscriber
+from Pay import Pay
+import threading
+session=" "
+name_list=[]
+time_list=[]
+sub=Subscriber(session,name_list,time_list)
+sub.get_message()
+target_list=sub.get_list()
+print(target_list)
 def subscribe():
     session_1="6de0549f-4b58-4bd5-acb3-6aa3011b7722"
     session_2="87bdeb00-080e-4d8f-8508-8b26c7eb3788"
@@ -37,7 +41,3 @@ def subscribe():
             thread4.join()
             thread5.join()
             break 
-if __name__ == "__main__":
-    subscribe()
-    thread4 = threading.Thread(target=Subscriber(session=session_1,target_time_list=time_2,target_name_list=name_2).run)
-    thread5 = threading.Thread(target=Subscriber(session=session_2,target_time_list=time_1,target_name_list=name_4).run)

@@ -1,0 +1,108 @@
+35816 - 2024-04-07 00:00:00 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-07
+21928 - 2024-04-07 00:00:00 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-07
+35816 - 2024-04-07 00:00:00 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-07
+35816 - 2024-04-07 00:00:00 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-07
+21928 - 2024-04-07 00:00:00 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-07
+26276 - 2024-04-07 00:00:00 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-07
+26276 - 2024-04-07 00:00:00 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-07
+21928 - 2024-04-07 00:00:00 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-07
+26276 - 2024-04-07 00:00:00 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-07
+26276 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+26276 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+26276 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+26276 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 69 - INFO: - 目标场地[[2979218, 391358, '场地7', 21], [2979217, 391358, '场地6', 21]]
+26276 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 69 - INFO: - 目标场地[[2979218, 391358, '场地7', 21], [2979217, 391358, '场地6', 21]]
+26276 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 69 - INFO: - 目标场地[[2979218, 391358, '场地7', 21], [2979217, 391358, '场地6', 21]]
+35816 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+35816 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+35816 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+35816 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 69 - INFO: - 目标场地[[2979187, 391356, '场地2', 19], [2979188, 391356, '场地3', 19], [2979189, 391356, '场地4', 19]]
+35816 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 69 - INFO: - 目标场地[[2979187, 391356, '场地2', 19], [2979188, 391356, '场地3', 19], [2979189, 391356, '场地4', 19]]
+35816 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 69 - INFO: - 目标场地[[2979187, 391356, '场地2', 19], [2979188, 391356, '场地3', 19], [2979189, 391356, '场地4', 19]]
+21928 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+21928 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+21928 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+21928 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 69 - INFO: - 目标场地[[2979207, 391357, '场地9', 20], [2979206, 391357, '场地8', 20], [2979203, 391357, '场地5', 20]]
+21928 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 69 - INFO: - 目标场地[[2979207, 391357, '场地9', 20], [2979206, 391357, '场地8', 20], [2979203, 391357, '场地5', 20]]
+21928 - 2024-04-07 00:00:01 - Subscriber_logmode.py - 69 - INFO: - 目标场地[[2979207, 391357, '场地9', 20], [2979206, 391357, '场地8', 20], [2979203, 391357, '场地5', 20]]
+26276 - 2024-04-07 00:00:04 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+26276 - 2024-04-07 00:00:04 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+26276 - 2024-04-07 00:00:04 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+35816 - 2024-04-07 00:00:05 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+35816 - 2024-04-07 00:00:05 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+35816 - 2024-04-07 00:00:05 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+26276 - 2024-04-07 00:00:07 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+26276 - 2024-04-07 00:00:07 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+26276 - 2024-04-07 00:00:07 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+21928 - 2024-04-07 00:00:09 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+21928 - 2024-04-07 00:00:09 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+21928 - 2024-04-07 00:00:09 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+35816 - 2024-04-07 00:00:12 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+35816 - 2024-04-07 00:00:12 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+35816 - 2024-04-07 00:00:12 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+35816 - 2024-04-07 00:00:14 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+35816 - 2024-04-07 00:00:14 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+35816 - 2024-04-07 00:00:14 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000005091003","result":"0"}
+21928 - 2024-04-07 00:00:17 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+21928 - 2024-04-07 00:00:17 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+21928 - 2024-04-07 00:00:17 - Subscriber_logmode.py - 83 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+21928 - 2024-04-07 00:00:18 - Subscriber_logmode.py - 83 - INFO: - <!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the error log for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
+
+21928 - 2024-04-07 00:00:18 - Subscriber_logmode.py - 83 - INFO: - <!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the error log for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
+
+21928 - 2024-04-07 00:00:18 - Subscriber_logmode.py - 83 - INFO: - <!DOCTYPE html>
+<html>
+<head>
+<title>Error</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+</head>
+<body>
+<h1>An error occurred.</h1>
+<p>Sorry, the page you are looking for is currently unavailable.<br/>
+Please try again later.</p>
+<p>If you are the system administrator of this resource then you should check
+the error log for details.</p>
+<p><em>Faithfully yours, nginx.</em></p>
+</body>
+</html>
+

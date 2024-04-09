@@ -14,7 +14,7 @@ class Logger(object):
             datefmt='%Y-%m-%d %H:%M:%S')
 
         # 使用FileHandler输出到文件
-        fh = logging.FileHandler(log_path)
+        fh = logging.FileHandler(log_path,encoding="utf-8")
         fh.setLevel(logging.INFO)
         fh.setFormatter(formatter)
 
