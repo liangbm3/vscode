@@ -1,6 +1,6 @@
-from tianqi import TIANQI
-from weibo import WEIBO
-from zhihu import ZHIHU
+from server.weixin.tianqi import TIANQI
+from server.weixin.weibo import WEIBO
+from server.weixin.zhihu import ZHIHU
 import zmail
 
 sender = ('lbmwudi@163.com','ZFJZJPXCHIMFQMAD')

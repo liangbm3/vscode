@@ -33,12 +33,12 @@ class WEIBO():
     def get_message(self):
         self.response=requests.get(url=self.url,headers=self.headers,cookies=self.cookies)
         tree=etree.HTML(self.response.text)
-        self.conten_list=[]    
+        self.content_list=[]    
         for i in range(0,50):
             r=tree.xpath('/html/body/div[1]/div[2]/div/div[2]/div[1]/table/tbody/tr['+str(i+1)+']/td[2]/a/text()')
-            self.conten_list.append(r)
+            self.content_list.append(r)
             
 if __name__=="__main__":
     weibo=WEIBO()
     weibo.get_message()
-    print(weibo.conten_list)
+    print(weibo.content_list[0][0])

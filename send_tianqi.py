@@ -1,4 +1,4 @@
-from tianqi import TIANQI
+from server.weixin.tianqi import TIANQI
 import zmail
 import datetime
 sender = ('lbmwudi@163.com','ZFJZJPXCHIMFQMAD')
