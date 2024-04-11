@@ -15,7 +15,6 @@ def wechat():
     signature=request.args.get("signature")
     timestamp=request.args.get("timestamp")
     nonce=request.args.get("nonce")
-    
     if not all([signature,timestamp,nonce]):
         abort(400)
     li=[WECHAT_TOKEN,timestamp,nonce]
