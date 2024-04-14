@@ -1,0 +1,296 @@
+\documentclass[a4paper,10pt,notitlepage]{article}
+\usepackage{ctex,geometry,graphicx,tikz,setspace,paralist,fancyhdr,caption}
+\geometry{
+left=1.5cm,
+right=1.5cm,
+top=1.4cm,
+bottom=2cm,}
+\newcommand{\rec}{
+	\begin{tikzpicture}[remember picture,overlay]
+		% 绘制边框
+		\draw[line width=1.2pt] ([xshift=0.5cm,yshift=0.5cm] current page.south west) rectangle ([xshift=-0.5cm,yshift=-0.8cm] current page.north east);
+	\end{tikzpicture}
+	
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\rec}  % 在页眉中绘制图形
+\fancyhead[L]{模电实验报告}
+\fancyhead[R]{实验一 \quad 单极交流放大电路}
+\fancyfoot[C]{\thepage}
+\begin{document}
+		\large
+		\onehalfspacing
+		\begin{figure}[h]
+			\raggedright
+			\includegraphics{1-1.png}
+		\end{figure}
+		\centering
+		{\Huge\textbf{模电实验报告}\par}
+		\vspace{0.2cm}
+		{\huge{实验内容：单级交流放大电路}\par}
+		\raggedright
+		\vspace{0.3cm}
+		\begin{centering}
+			{\large 院系：电子与信息工程学院\hfill 学号：22309080\hfill 审批：\hspace{2cm} \par
+			专业：通信工程\hfill 实验人：梁倍铭\hfill 日期：2023年11月3日 \par}
+		\end{centering}
+		\vspace{0.3cm}
+		\section*{一、实验目的}
+			\begin{enumerate}
+				\item 掌握放大电路静态工作点的测试方法，进一步理解电路元件参数对静态工作点的影响，以及调整静态  工作点的方法。
+				\item 掌握测量电压放大倍数、输入电阻、输出电阻及最大不失真输出电压幅值的方法。
+				\item 观察电路参数对失真的影响。
+			\end{enumerate}
+		\section*{二、实验仪器和器件}
+			\begin{inparaenum}
+				\item 实验箱
+				\item 直流电源 
+				\item 交流毫伏表
+				\item 双踪示波器
+			\end{inparaenum}
+		\section*{三、原理简介(简要概括)}
+			\setlength{\parindent}{2em} 
+		\indent 放大电路的用途非常广泛，单管放大电路是最基本的放大电路。不论是单级或多级放大器它的基本任务是相同的，就是对信号给予不失真的、稳定的放大。\par
+		\begin{enumerate}
+			\item  放大电路静态工作点的选择\par
+			当对放大电路仅提供直流电源，不提供输入信号时，称为静态工作情况，这时三极管
+			的各电极的直流电压和电流的数值，将和三极管特性曲线上的一点对应，这点常称为Q
+			点。\par
+			静态工作点如果选择不当会产生饱和失真或截止失真。\par
+			非线性失真在单管放大电路中不可避免，为了降低这种非线性失真，必须使输入信号的幅值较小。\par
+			\item  放大电路的基本性能\par
+			基本性能测量的原理电路如图1-1 所示。\par
+			\begin{figure}[t]
+				\centering
+				\includegraphics[width=0.5\textwidth]{1-2.png}
+				\caption*{图1-1 交流放大电路实验原理图}
+			\end{figure}
+			\begin{enumerate}
+				\item 电压放大倍数$A_u$的测量\par
+				用晶体管毫伏表测量图1-1 中$U_i$和$U_o$的值。即：
+				$$A_U=U_o-U_i$$
+				\item 输入电阻$R_i$的测量\par
+				$$R_i=U_i/I_i$$
+				通常测量$R_i$的方法是：在放大器的输入回路串一个已知电阻R，选用$R\approx Ri$ (这里的
+				$R_i$为理论估算值)。在放大器输入端加正弦信号电压，用示波器观察放大器输出电压$u_o$，
+				在$u_o$不失真的情况下，用晶体管毫伏表测电阻R 两端对地的电压和$U_i$(见图1-1)，
+				则有：
+				$$R_i=\frac{U_i}{I_i}=\frac{U_i}{U_i'-U_i}R$$
+				\item 输出电阻R的测量
+				测量$R_o$的方法是在放大器的输入端加信号电压，在输出电压$u_o$不失真的情况下，用
+				晶体管毫伏表分别测量空载时放大器的输出电压$U_\infty$和带负载时放大器的输出电压$U_{OL}$ 值，
+				则输出电阻：
+				$$R_O=\frac{U_\infty-U_{OL}}{I_O}=\frac{U_\infty-U_{OL}}{U_{OL}}R_L$$
+			\end{enumerate}
+		\end{enumerate}
+		\section*{四、实验内容和步骤}
+		\begin{enumerate}
+			\item 调节静态工作点\par
+			调节静态工作点
+			按图1-2 连好电路（$V_{CC}$为6V 也可以
+			为12V，原理图以6V 为电源），将输入端
+			对地短路，调节电位器$W_1$，使$U_C=V_{CC}/2$，
+			测静态工作点$U_C$、$U_E$、$U_B$ 的数值，记入表
+			1-1 中，并计算$I_B$、$I_C$。为了计算$I_B$、$I_C$，
+			应测量$R_{W1}$ 阻值，测量时应切断电源，并且
+			将它与电路的连接断开，按下式计算静态
+			工作点：
+			
+			$$I_C=\frac{V_{CC}-U_C}{R_C}$$
+			$$I_B=\frac{V_{CC}-U_{BE}}{R_B}$$
+			$$(R_B=R_{1R5}+R_{W1})$$
+			也可以用数字万用表测量1R5 两端电压U1R5 及Rc 两端电压URc,则
+			$$I_B=\frac{U_{R_{1R5}}}{R_{1R5}}\qquad I_C=\frac{U_{R_C}}{R_C}$$   
+			仿真和测量结果如下：
+			\begin{figure}[h]
+				\raggedright
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{1-3.png}
+					\caption*{图1-2}
+				\end{minipage}
+				\qquad
+				\begin{minipage}{0.28\textwidth}
+					\centering
+					\begin{tabular}{|c|c|c|c|c|c|c|c|}
+						\hline
+						 & $U_C(V)$ & $U_E(V)$ & $U_B(V)$ & $I_B(\mu A)$ & $I_C(mA)$ & $R_{W1}(\Omega)$\\
+						\hline
+						仿真 & 6.02 & 0 & 0.63 & 14.6 & 3.00 & $6.3 \times 10^{-5}$ \\
+						\hline
+						实验 & 6.2178 & 0 & 0.639 & 17.96 & 2.99 & $5.324 \times 10^{5}$ \\
+						\hline
+					\end{tabular}
+					\caption*{表1-1 仿真结果与实验数据}
+				\end{minipage}
+			\end{figure}
+			\newpage
+			\item 测量电压放大倍数及观察负载电阻对放大倍数的影响\par
+			在实验步骤l 的基础上，把输入对地断开，接入f=1Kz、$U_i$=5mV 的正弦波信号，负载
+			电阻分别为$R_L$=2KΩ、$R_L$=5.1KΩ和$R_L$=∞，用毫伏表测量输出电压的值，用示波器观察输入
+			电压和输出电压波形，把数据填写入表1-2 中。
+			\begin{enumerate}
+				\item 数据：
+				\begin{table}[h]
+					\centering
+					\begin{minipage}{0.3\textwidth}
+						\centering
+						\caption*{表1-2-1 仿真数据}
+						\begin{tabular}{|c|c|c|c|}
+							\hline
+							$R_L(\Omega)$ & $U_i(mV)$ & $U_o(mV)$ & $A_u$ \\
+							\hline
+							2k & 20 & 2600 & 130 \\
+							\hline
+							5.1k & 20 & 3400 & 170 \\
+							\hline
+							$\infty$ & 20 & 4000 & 200 \\
+							\hline
+						\end{tabular}
+					\end{minipage}
+					\qquad
+					\begin{minipage}{0.3\textwidth}
+						\centering
+						\caption*{表1-2-2 实验数据}
+						\begin{tabular}{|c|c|c|c|}
+							\hline
+							$R_L(\Omega)$ & $U_i(mV)$ & $U_o(mV)$ & $A_u$ \\
+							\hline
+							2k & 19.6 & 2430 & 124 \\
+							\hline
+							5.1k & 19.6 & 3540 & 181 \\
+							\hline
+							$\infty$ & 19.6 & 4000 & 204 \\
+							\hline
+						\end{tabular}						
+					\end{minipage}
+					\caption*{表1-2 仿真与实验数据}
+				\end{table}
+				\item 图像：
+				\begin{table}[h]
+				\centering
+				\begin{tabular}{|c|c|c|}
+	
+					\hline
+					$R_L(\Omega)$ & 仿真波形 & 实验波形 \\
+					\hline
+					2k & \includegraphics[width=0.2\textwidth]{1-4.png} &  \includegraphics[width=0.2\textwidth]{1-9.jpg}\\
+					\hline
+					5.1k & \includegraphics[width=0.2\textwidth]{1-5.png} & 
+					\includegraphics[width=0.2\textwidth]{1-8.jpg}\\
+					\hline
+					$\infty$ & \includegraphics[width=0.2\textwidth]{1-6.png} & 
+					\includegraphics[width=0.2\textwidth]{1-7.jpg} \\
+					\hline
+				\end{tabular}
+				\caption*{图1-3 仿真波形和实验波形}
+				\end{table}
+			\end{enumerate}
+			\item 测量输入电阻和输出电阻\par 
+			按图1-3 连好电路，输入端接入f=lKHz、$U_i$=20mV 的正弦信号，分别测出电阻1R1 两
+			端对地信号电压$U_i$ 及$U_i'$，将测量数据及实验结果填入表1-3 中。\par 
+			测出负载电阻RL 开路时的输出电压U∞，和接入$R_L$ 时的输出电压Uo，将测量数据及实验结
+			果填入表1-3 中。\par 
+			\begin{figure}[h]
+				\raggedright
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{1-10.png}
+					\caption*{图1-3}
+				\end{minipage}
+				\qquad
+				\begin{minipage}{0.28\textwidth}
+					\centering
+					\begin{tabular}{|c|c|c|c|c|c|c|}
+						\hline
+						& $U_i(mV)$ & $U_i'(mV)$ & $R_i(\Omega)$ & $U_\infty(V)$ & $U_o(V)$ & $R_o(\Omega)$ \\
+						\hline
+						仿真 & 20 & 8.43 & 3709 & 0.879 & 0.639 & 1914 \\
+						\hline
+						实验 & 20 & 7.02 & 3070 & 1.00 & 0.64 & 1762 \\
+						\hline
+					\end{tabular}
+					\caption*{表1-3 仿真结果与实验数据}
+				\end{minipage}
+			\end{figure}
+			\item 观察静态工作点对放大器输出波形的影响\par 
+			按图1-2 连好电路, 负载电阻RL=5.1KΩ，将观察结果分别填入表1-4，表1-5 中。\par 
+			\begin{enumerate}
+				\item 输入端接入f=lKHz、Ui=5mV 的正弦信号，用示波器观察正常工作时输出电压的波
+				形并描绘下来。
+				\item 逐渐减小W1 的阻值，观察输出之压的变化，在输出电压波形出现明显削波失真
+				时，把失真的波形描绘下来，并说明是哪种失真，如果W1=0Ω后仍不出现失真，可以加大
+				输入信号ui 或将Rb1 由100KΩ改为10KΩ，直到出现明显失真波形。
+				\item 逐渐减小W1 的阻值，观察输出之压的变化，在输出电压波形出现明显削波失真
+				时，把失真的波形描绘下来，并说明是哪种失真，如果W1=0Ω后仍不出现失真，可以加大
+				输入信号ui 或将Rb1 由100KΩ改为10KΩ，直到出现明显失真波形。
+				\item 调节W1 使输出电压波形不失真且幅值为最大，测量此时的静态工作点UC，UB，RW
+				和输出电压的数值。并估算此时的动态范围（用有效值表示）。
+			\end{enumerate}
+			\begin{figure}[h]
+				\raggedright
+				\begin{minipage}{0.19\textwidth}
+					\centering
+					\begin{tabular}{|c|c|c|}
+						\hline
+						阻值 & 波形 & 何种失真 \\
+						\hline
+						正常 & \includegraphics[width=\textwidth]{1-4.png} & 无 \\
+						\hline
+						$R_B$减小 & \includegraphics[width=\textwidth]{1-11.png} & 底部失真 \\
+						\hline
+						$R_B$增大 & \includegraphics[width=\textwidth]{1-12.png} & 顶部失真 \\
+						\hline
+					\end{tabular}
+					\caption*{表1-4-1 仿真结果}
+				\end{minipage}
+					\hspace{6.5cm}
+				\begin{minipage}{0.19\textwidth}
+					\begin{tabular}{|c|c|c|}
+						\hline
+						阻值 & 波形 & 何种失真 \\
+						\hline
+						正常 & \includegraphics[width=\textwidth]{1-13.jpg} & 无 \\
+						\hline
+						$R_B$减小 & \includegraphics[width=\textwidth]{1-14.jpg} & 底部失真 \\
+						\hline
+						$R_B$增大 & \includegraphics[width=\textwidth]{1-15.jpg} & 顶部失真 \\
+						\hline
+					\end{tabular}
+					\caption*{表1-4-1 实验结果}
+				\end{minipage}
+			\end{figure}
+			\newpage
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					& $R_B(\Omega)$ & $U_c(V)$ & $U_B(V)$ & $U_{Om}$ \\
+					\hline
+					仿真 & $4.3 \times 10^5$ & 2.36 & 0.58 & 2.52 \\
+					\hline
+					实验 & $5.3 \times 10^5$ & 5.0 & 1.5 & 5.89 \\
+					\hline
+				\end{tabular}
+				\caption*{表1-5 仿真和实验数据}
+			\end{table}
+		\end{enumerate}
+		\section*{五、实验总结}
+		\begin{enumerate}
+			\item 电路参数变化对静态工作点和放大参数的影响：\par 
+			负载越大，放大倍数越大；$R_c$增大放大倍数增大；$R_b$增大，静态工作点无明显变化，但放大倍数会增大。\par 
+			\item  输入电阻和输出电阻测量方法：\par 
+			根据课堂所讲和讲义所述：\par 
+			\begin{enumerate}
+				\item $U_i$: 通过在输入回路中串联一个已知电阻并测量两端对地电压，再通过一下公式计算: $$R_i=\frac{U_i}{I_i}=\frac{U_i}{U_i'-U_i}R$$
+				\item $R_o$: 可以通过测量空载和负载的电压，再利用公式计算：
+				$$R_O=\frac{U_\infty-U_{OL}}{I_O}=\frac{U_\infty-U_{OL}}{U_{OL}}R_L$$
+			\end{enumerate}
+			\item 静态工作点对放大器输出波形的影响：\par 
+			如果静态工作点上移，则会到达饱和区，会发生饱和失真，输出波形会出现底部失真；\par 
+			如果静态工作点下移，则会到达截至区，会发生截止失真，输出波形会出现顶部失真。
+		\end{enumerate}
+		\section*{六、预习报告}
+		预习报告见附页
+\end{document}

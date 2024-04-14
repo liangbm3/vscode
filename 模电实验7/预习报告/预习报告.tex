@@ -1,0 +1,90 @@
+\documentclass[a4paper,10pt,notitlepage]{article}
+\usepackage{ctex,geometry,graphicx,tikz,setspace,paralist,fancyhdr,caption}
+\geometry{
+	left=1.5cm,
+	right=1.5cm,
+	top=1.4cm,
+	bottom=2cm,}
+\newcommand{\rec}{
+	\begin{tikzpicture}[remember picture,overlay]
+		% 绘制边框
+		\draw[line width=1.2pt] ([xshift=0.5cm,yshift=0.5cm] current page.south west) rectangle ([xshift=-0.5cm,yshift=-0.8cm] current page.north east);
+	\end{tikzpicture}
+	
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\rec}  % 在页眉中绘制图形
+\fancyhead[L]{附录}
+\fancyhead[R]{实验十 \quad 电压比较器}
+\fancyfoot[C]{\thepage}
+\begin{document}
+	\large
+	\onehalfspacing
+	\begin{figure}[h]
+		\raggedright
+		\includegraphics{1.png}
+	\end{figure}
+	\centering
+	{\Huge\textbf{模电实验报告}\par}
+	\vspace{0.2cm}
+	{\huge{实验内容：电压比较器}\par}
+	\raggedright
+	\vspace{0.3cm}
+	\begin{centering}
+		{\large 院系：电子与信息工程学院\hfill 学号：22309080\hfill 审批：\hspace{2cm} \par
+			专业：通信工程\hfill 实验人：梁倍铭\hfill 日期：2023年12月14日 \par}
+	\end{centering}
+	\vspace{0.3cm}
+	\section*{一、过零比较器}
+	\begin{enumerate}
+		\item 仿真结果：7.31V      实验结果：
+		\item 仿真示意图如图9-1
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{2.png}
+			\caption*{图10-1}
+		\end{figure}
+		\item 改变$V_i$的幅值，$V_o$的幅值没有明显变化
+	\end{enumerate}
+	\section*{二、反相滞回比较器}
+	\begin{enumerate}
+		\item 仿真结果为：12.8V \qquad\qquad  实验结果为：
+		\item 仿真结果为：12.8V \qquad\qquad  实验结果为：
+		\item Vi 接500Hz 有效值lV 的正弦信号，观察并记录Vi 和Vo 波形。波形如图10-2
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{3.png}
+			\caption*{图10-2}
+		\end{figure}
+		\item 将电路中1MΩ 电位器调到200K，重复上述实验。\par
+		由正到负 \qquad 仿真结果：12.8V   \qquad\qquad 实验结果：\par 
+		由负到正 \qquad 仿真结果：12.8V   \qquad\qquad 实验结果：\par
+		波形如图10-3
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{4.png}
+			\caption*{图10-3}
+		\end{figure}
+	\end{enumerate}
+	\section*{三、同相滞回比较器}
+	\begin{enumerate}
+		\item 仿真结果为：14.8V \qquad\qquad  实验结果为：
+		\item 仿真结果为：14.8V  \qquad\qquad 实验结果为：
+		\item Vi 接500Hz 有效值lV 的正弦信号，观察并记录Vi 和Vo 波形。波形如图10-4
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{5.png}
+			\caption*{图10-4}
+		\end{figure}
+		\item 将电路中1MΩ 电位器调到200K，重复上述实验。\par 
+		由正到负\qquad 仿真结果：13.8V  \qquad\qquad    实验结果：\par 
+		由负到正\qquad 仿真结果：13.8V \qquad\qquad   实验结果：\par
+		波形如图10-5
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.4\textwidth]{6.png}
+			\caption*{图10-5}
+		\end{figure}
+	\end{enumerate}
+\end{document}

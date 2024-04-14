@@ -1,0 +1,248 @@
+\documentclass[a4paper,10pt,notitlepage]{article}
+\usepackage{ctex,geometry,graphicx,tikz,setspace,paralist,fancyhdr,caption}
+\geometry{
+	left=1.5cm,
+	right=1.5cm,
+	top=1.4cm,
+	bottom=2cm,}
+\newcommand{\rec}{
+	\begin{tikzpicture}[remember picture,overlay]
+		% 绘制边框
+		\draw[line width=1.2pt] ([xshift=0.5cm,yshift=0.5cm] current page.south west) rectangle ([xshift=-0.5cm,yshift=-0.8cm] current page.north east);
+	\end{tikzpicture}
+	
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\rec}  % 在页眉中绘制图形
+\fancyhead[L]{模电实验报告}
+\fancyhead[R]{实验九 \quad 有源滤波器}
+\fancyfoot[C]{\thepage}
+\begin{document}
+	\large
+	\onehalfspacing
+	\begin{figure}[h]
+		\raggedright
+		\includegraphics{预习报告/1.png}
+	\end{figure}
+	\centering
+	{\Huge\textbf{模电实验报告}\par}
+	\vspace{0.2cm}
+	{\huge{实验内容：有源滤波器}\par}
+	\raggedright
+	\vspace{0.3cm}
+	\begin{centering}
+		{\large 院系：电子与信息工程学院\hfill 学号：22309080\hfill 审批：\hspace{2cm} \par
+			专业：通信工程\hfill 实验人：梁倍铭\hfill 日期：2023年12月13日 \par}
+	\end{centering}
+	\vspace{0.3cm}
+	\section*{一、实验目的}
+	\begin{enumerate}
+		\item 了解由集成运放组成的有源滤波电路。
+		\item 掌握测量有源滤波器幅频特性的方法。
+		\item 学习设计滤波电路。
+	\end{enumerate}
+	\section*{二、原理简介}
+	\begin{enumerate}
+	\item 滤波器的传输函数\par 
+	\qquad 由RC 元件与运算放大器组成的滤波器称为RC 有源滤波器，其功能是让一定频率范围
+	内的信号通过，抑制或急剧衰减此频率范围以外的信号。滤波器可用在信息处理、数据传
+	输、抑制干扰等方面，但因受运算放大器频带限制，这类滤波器主要用于低频范围。根据
+	对频率范围的选择不同，可分为低通、高通、带通与带阻等四种滤波器，它们的幅频特性
+	如图9-1 所示。
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{1.png}
+		\caption*{图9-1}
+	\end{figure}
+	\item 有源滤波电路
+	\begin{enumerate}
+		\item 低通滤波器 \par 
+		低通滤波电路如图9-2 所示，其性能参数为\par 
+		通带放大倍数为：
+		$$A_{up}=1+\frac{R_F}{R_1}$$
+		通带截止频率:
+		$$f_0=\frac{1}{2\pi RC}$$
+		等效品质因素：
+		$$Q=\frac{1}{3-A_{up}}$$
+	\end{enumerate}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{2.png}
+		\caption*{图9-2}
+	\end{figure}
+	\item 高通滤波器\par 
+	高通滤波电路如图4-1-7-3 所示，其性能参数表达式同低通滤波器。
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{3.png}
+		\caption*{图9-3}
+	\end{figure}
+	\item 带通滤波器\par 
+	带通滤波电路如图4-1-7-4 所示，其性能参数为\par
+	中心频率:
+	$$f_0=\frac{1}{2\pi RC}$$
+	$$A_{uo}=1+\frac{R_F}{R_1}    Q=\frac{1}{3-A_{uo}}$$
+	通带宽度：
+	$$B=(2-\frac{R_F}{R_1}f_0)$$
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{4.png}
+		\caption*{图9-4}
+	\end{figure}
+\end{enumerate}
+\section*{三、实验内容和步骤}
+\begin{enumerate}
+	\item 低通滤波器\par 
+	实验电路如图9-2 所示，RF 分别取2K、10K，测出测量输入信号Ui=lV、频率f 在4Hz
+	~ 800Hz 范围变化时的Vo 值，表格自拟。测量结果如表1和表2\par
+	仿真和测量结果如下：
+	\begin{table}[h]
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				频率(Hz) & 4 & 10 & 20 & 30 & 50 & 100 & 150 & 180 & 200 & 300 & 400 & 600 & 800 \\
+				\hline
+				仿真$V_o$(V) & 1.195 & 1.185 & 1.15 & 1.095 & 0.93 & 0.51 & 0.28 & 0.2055 & 0.171 & 0.08 & 0.0465 & 0.02075 & 0.0117 \\
+				\hline 
+				实验$V_o$(V) & 1.21 & 1.21 & 1.15 & 1.08 & 0.92 & 0.488 & 0.265 & 0.193 & 0.164 & 0.075 & 0.0428 & 0.021 & 0.131 \\
+				\hline
+			\end{tabular}
+			\caption*{表1 低通滤波器$R_F$取2k时的$V_o$}
+		\end{minipage}
+		\\
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				频率(Hz) & 4 & 10 & 20 & 30 & 50 & 100 & 150 & 180 & 200 & 300 & 400 & 600 & 800 \\
+				\hline
+				仿真$V_o$(V) & 2 & 2.015 & 2.06 & 2.125 & 2.28 & 1.43 & 0.625 & 0.422 & 0.337 & 0.1445 & 0.08 & 0.035 & 0.0197 \\
+				\hline 
+				实验$V_o$(V) & 2.1 & 2.11 & 2.12 &  2.25 & 2.49 & 1.47 & 0.618 & 0.414 & 0.332 & 0.142 & 0.0762 & 0.0354 & 0.0201 \\
+				\hline
+			\end{tabular}
+			\caption*{表2 低通滤波器$R_F$取10k时的$V_o$}
+		\end{minipage}
+	\end{table}
+	由于预习时截止频率计算有误，所以导致拟表格时数据点没有取好，实验时发现问题，所以及时改正，补充表格如下\par 
+	\begin{table}[h]
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				频率(Hz) & 60 & 70 & 80 & 90 \\
+				\hline
+				仿真$V_o$(V) & 0.84 & 0.75 & 0.66 & 0.58 \\
+				\hline 
+				实验$V_o$(V) & 0.82 & 0.69 & 0.65 & 0.56  \\
+				\hline
+			\end{tabular}
+			\caption*{表3 低通滤波器$R_F$取2k时的$V_o$续表}
+		\end{minipage}
+		\qquad \qquad \qquad
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				频率(Hz) & 60 & 70 & 80 & 90 \\
+				\hline
+				仿真$V_o$(V) & 2.3 & 2.2 & 1.975 & 1.171 \\
+				\hline 
+				实验$V_o$(V) & 2.32 & 2.21 & 2.08 & 1.715  \\
+				\hline
+			\end{tabular}
+			\caption*{表4 低通滤波器$R_F$取10k时的$V_o$续表}
+		\end{minipage}
+	\end{table}
+	将所得到的结果在matlab上用曲线拟合得到低通滤波器的幅频特性曲线，如图9-5
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{5.png}
+		\caption*{图9-5}
+	\end{figure}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{6.png}
+		\caption*{图9-6}
+	\end{figure}
+	\newpage
+	\item 高通滤波器\par 
+	实验电路如图9-3 所示，测出测量输入信号Vi=lV、频率f 在400Hz ~ 10Hz 范围变化
+	时的Vo 值，表格自拟。测量和实验数据如表5和表6所示
+	\begin{table}[h]
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				频率(Hz) & 400 & 350 & 300 & 250 & 200 & 160 & 100 & 90 & 80 & 70 & 60 & 50 & 20 & 10 \\
+				\hline
+				仿真$V_o$(V) & 1.17 & 1.16 & 1.15 & 1.125 & 1.08 & 1.025 & 0.815 & 0.75 & 0.67 & 0.58 & 0.479 & 0.371 & 0.073 & 0.01885\\
+				\hline 
+				实验$V_o$(V) & 1.17 & 1.165 & 1.145 & 1.12 & 1.09 & 1.02 & 0.815 & 0.75 & 0.66 & 0.59 & 0.48 & 0.366 & 0.073 & 0.196 \\
+				\hline
+			\end{tabular}
+			\caption*{表3 高通滤波器$R_F$取2k时的$V_o$值}
+		\end{minipage}
+		\\
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+				\hline
+				频率(Hz) & 400 & 350 & 300 & 250 & 200 & 160 & 100 & 90 & 80 & 70 & 60 & 50 & 20 & 10 \\
+				\hline
+				仿真$V_o$(V) & 2.035 & 2.05 & 2.065 & 2.095 & 2.145 & 2.21 & 2.28 & 2.195 & 2.01 & 1.71 & 1.315 & 0.91 & 0.131 & 0.032 \\
+				\hline 
+				实验$V_o$(V) & 2.13 & 2.13 & 2.18 & 2.23 & 2.3 & 2.39 & 2.6 & 2.2 & 2 & 1.73 & 1.33 & 1.035 & 1.141 & 0.0354 \\
+				\hline
+			\end{tabular}
+			\caption*{表4 高通滤波器$R_F$取10k时的$V_o$值}
+		\end{minipage}
+	\end{table}
+	将所得到的结果在matlab上用曲线拟合得到低通滤波器的幅频特性曲线，如图9-6
+	\newpage
+	\item 带通滤波器\par 
+	实验电路如图9-4 所示，测出测量输入信号Vi=lV、频率f 在10Hz - 400Hz 范
+	围变化时的Vo 值，表格自拟。仿真和实验结果如表7所示
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			频率(Hz) & 10 & 20 & 50 & 100 & 120 & 150 & 160 & 180 & 200 & 250 & 300 & 350 & 400 \\
+			\hline
+			仿真$V_o$(V) & 0.126 & 0.253 & 0.66 & 1.44 & 1.735 & 1.985 & 2 & 1.94 & 1.805 & 1.45 & 1.175 & 0.99 & 0.85 \\
+			\hline 
+			实验$V_o$(V) & 0.1245 & 0.258 & 0.675 & 1.49 & 1.81 & 2.01 & 2.02 & 1.93 & 1.78 & 1.39 & 1.15 & 0.95 & 0.815 \\
+			\hline
+		\end{tabular}
+		\caption*{表7 带通滤波器$V_o$值}
+	\end{table}
+	将所得到的结果在matlab上用曲线拟合得到低通滤波器的幅频特性曲线，如图9-7
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{7.png}
+		\caption*{图9-7}
+	\end{figure}
+\end{enumerate}
+\section*{四、实验器材}
+1、 实验箱 2、数字万用表 3、函数信号发生器 4、交流毫伏表
+5、双踪示波器
+\section*{五、实验总结与思考}
+\begin{enumerate}
+	\item 关于表格的设计\par 
+	\qquad 本次实验需要自己设计表格，一开始预习时只是随意地取点，并且预习时截止频率计算出错，导致取点时不够准确，在实验过程中发现了这个问题，及时进行了修正。得到的教训是以后取点应该先读懂实验原理，根据定量分析找到转折点，要在转折点附近多取点。
+	\item 关于实验误差分析\par 
+	\qquad 从表格上的数据来看，前面两个实验100k是测得的输出电压普遍偏高，原因是没有用万用表进行校准，只是直接将实验板上标定10k的滑动变阻器旋至最大，这可能导致了很大的误差，因为20k适用万用表校准过的，所以误差相对较小。\par
+	\qquad 从最后拟合的图像来看100k的仿真和实验结果相差较大，可能也是前面提到的结果导致的。
+	\item 实验思考题
+	\begin{enumerate}
+		\item 某同学在调试图9-2 时，输入频率为1kHz 的信号，发现输出电压远低于输入电
+		压，他认为电路存在故障，此结论是否正确?\par 
+		\qquad 不正确，因为该电路是低通滤波器，根据幅频特性曲线，频率到达1kHz时，输出电压很小
+		\item 高通滤波器的幅频特性，为什么在频率很高时，其电压放大倍数会随频率升高而
+		下降?\par 
+		\qquad 高通滤波器通常包含电容器元件。在高频情况下，电容器的阻抗会减小，导致它们对信号的阻抗减小，从而使得更多的信号绕过滤波器而不是通过它，导致输出电压放大倍数降低。
+	\end{enumerate}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,231 @@
+\documentclass[a4paper,10pt,notitlepage]{article}
+\usepackage{ctex,geometry,graphicx,tikz,setspace,paralist,fancyhdr,caption}
+\geometry{
+	left=1.5cm,
+	right=1.5cm,
+	top=1.4cm,
+	bottom=2cm,}
+\newcommand{\rec}{
+	\begin{tikzpicture}[remember picture,overlay]
+		% 绘制边框
+		\draw[line width=1.2pt] ([xshift=0.5cm,yshift=0.5cm] current page.south west) rectangle ([xshift=-0.5cm,yshift=-0.8cm] current page.north east);
+	\end{tikzpicture}
+	
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\rec}  % 在页眉中绘制图形
+\fancyhead[L]{附录}
+\fancyhead[R]{实验七 \quad 积分与微分电路}
+\fancyfoot[C]{\thepage}
+\begin{document}
+	\large
+	\onehalfspacing
+	\begin{figure}[h]
+		\raggedright
+		\includegraphics{预习报告/1.png}
+	\end{figure}
+	\centering
+	{\Huge\textbf{模电实验报告}\par}
+	\vspace{0.2cm}
+	{\huge{实验内容：积分与微分电路}\par}
+	\raggedright
+	\vspace{0.3cm}
+	\begin{centering}
+		{\large 院系：电子与信息工程学院\hfill 学号：22309080\hfill 审批：\hspace{2cm} \par
+			专业：通信工程\hfill 实验人：梁倍铭\hfill 日期：2023年11月28日 \par}
+	\end{centering}
+	\vspace{0.3cm}
+	\section*{一、实验目的}
+	\begin{enumerate}
+		\item 学会用运算放大器组成积分微分电路。
+		\item 学会积分微分电路的特点及性能。
+	\end{enumerate}
+	\section*{二、原理简介}
+	\begin{enumerate}
+		\item 积分电路\par 
+		实验电路如图7-1 所示
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{1.png}
+			\caption*{图7-1 积分电路}
+		\end{figure}
+		反积分电路：
+		$$U_o=-\frac{1}{R_1C}\int_{t_0}^{t}U_i(t)\mathrm{d}t+U_o(t_0)$$
+		积分电路输出电压是输入电压的积分，随着不同的输入电压，输出电压也表现为不同
+		的形式。电路除了进行积分运算外，很多情况下应用在波形变换电路中。
+		\item 微分电路\par 
+		实验电路如图7-2 所示。
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{2.png}
+			\caption*{图7-2 微分电路}
+		\end{figure}
+		微分电路电路理想分析得到公式：
+		$$U_o(t)=-RC\frac{\mathrm{d}U_i(t)}{\mathrm{d}t}$$
+		输出电压是输入电压的微分。
+		\item 积分—微分电路\par 
+		实验电路如图7-3 所示。
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{3.png}
+			\caption*{图7-3 积分--微分电路}
+		\end{figure}
+		先积分后微分可以对输入信号一个大致的还原。
+	\end{enumerate}
+	\section*{三、实验步骤和内容}
+	\begin{enumerate}
+		\item 积分电路\par 
+		按图7-1 连接电路。
+		\begin{enumerate}
+			\item 第一个实验课上老师说直接跳过
+			\item 使图7-1 中积分电容改为0.1μ，断开K1，Vi 分别输入100Hz 幅值为2V 方
+			波正弦波信号，观察Vi 和Vo 大小及相位关系，并记录波形。波形图如下
+			\begin{figure}[h]
+				\centering
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{4.png}
+					\caption*{图7-4 仿真波形}
+				\end{minipage}
+				\qquad
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{1.jpg}
+					\caption*{图7-5 实验波形}
+				\end{minipage}
+				\qquad
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{2.jpg}
+					\caption*{图7-6 实验失真波形}
+				\end{minipage}
+			\end{figure}
+			\item 改变输入的频率，观察Vi 与Vo 的相位、幅值关系。关系变化如表7-1
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{|c|c|c|c|c|}
+					\hline
+					频率(Hz) & 100 & 200 & 300 & 400\\
+					\hline
+					仿真幅值 & 3.15 & 1.565 & 1.055 & 0.79\\
+					\hline 
+					实验幅值 & 3.06 & 1.542 & 1.057 & 0.82\\
+					\hline
+				\end{tabular}
+				\caption*{表7-1 频率幅值表}
+			\end{table}
+		\end{enumerate}
+		\item 微分电路\par
+		\begin{enumerate}
+			\item 输入有效值为lV，f =160Hz 三角波（正弦波）信号，用示波器观察Vi 与Vo
+			波形并测量输出电压。
+			\begin{figure}[h]
+				\centering
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{5.png}
+					\caption*{图7-7 仿真波形}
+				\end{minipage}
+				\qquad
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{3.jpg}
+					\caption*{图7-8 实验波形}
+				\end{minipage}
+			\end{figure}
+			\item 改变三角波（正弦波）频率(20HZ～400HZ)，观察Vi 与Vo 的相位、幅值变化
+			情况并记录。幅值变化关系如表7-2，相位都是相差$\frac{\pi}{2}$
+			\begin{table}[h]
+				\centering
+				\begin{tabular}{|c|c|c|c|c|c|c|c|}
+					\hline
+					频率(Hz) & 20 & 50 & 100 & 150 & 200 & 300 & 400 \\
+					\hline
+					仿真幅值 & 0.277 & 0.7 & 1.38 & 2.08 & 2.775 & 4.16 & 5.55\\
+					\hline 
+					实验幅值 & 0.258 & 0.68 & 1.372 & 2.04 & 2.658 & 4.15 & 5.440 \\
+					\hline
+				\end{tabular}
+				\caption*{表7-2 频率幅值表}
+			\end{table}
+			\item 输入V= ±5V，f =200Hz 的方波信号，用示波器观察Vo 波形，按上述步骤重
+			复实验。
+			\begin{figure}[h]
+				\centering
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{6.png}
+					\caption*{图7-9 仿真波形}
+				\end{minipage}
+				\qquad
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{4.jpg}
+					\caption*{图7-10 实验波形}
+				\end{minipage}
+			\end{figure}
+		\end{enumerate}
+		\item 积分--微分电路\par 
+		按图7-3 连接电路。
+		\begin{enumerate}
+			\item 在Vi 输入f =200Hz，V=±6V 的方波信号，用示波器观察Vi 和V0 的波形并
+			记录。观察到的波形如下
+			\begin{figure}[h]
+				\centering
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{7.png}
+					\caption*{图7-11 仿真波形}
+				\end{minipage}
+				\qquad
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{5.jpg}
+					\caption*{图7-12 实验波形}
+				\end{minipage}
+			\end{figure}
+			
+			\item 将f 改为500Hz 重复上述实验。
+			\begin{figure}[h]
+				\centering
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{8.png}
+					\caption*{图7-13 仿真波形}
+				\end{minipage}
+				\qquad
+				\begin{minipage}{0.3\textwidth}
+					\centering
+					\includegraphics[width=\textwidth]{6.jpg}
+					\caption*{图7-14 实验波形}
+				\end{minipage}
+			\end{figure}
+		\end{enumerate}
+	\end{enumerate}
+	\section*{四、实验器材}
+	1、 实验箱 2、数字万用表 3、函数信号发生器 4、交流毫伏表
+	5、双踪示波器
+	\section*{五、实验结果分析}
+	\begin{enumerate}
+		\item 对于图7-1和7-2的分析
+		\begin{enumerate}
+			\item 分析图7-1 电路，若输入正弦波，Vo 与Vi 相位差是$-90^{\circ}$当输入信号为100Hz 有 效
+			值为2V 时，Vo=7.4v
+			\item 图7-2 电路，若输入方波，Vo 与Vi 相位差是$90^{\circ}$当输入信号为160Hz 幅值为lV
+			时，输出Vo=6v
+		\end{enumerate}
+		\item 积分电路的特点
+		\begin{enumerate}
+			\item 输出信号与输入信号的关系是积分关系，输出电压是输入电压的积分。
+			\item 对于低频信号的积分，积分电路表现出较好的性能。它能够积累来自输入信号的全部变化，并消除高频成分
+			\item 积分电路通常用于信号处理、滤波、计算总量、微分方程的求解等应用。
+		\end{enumerate}
+		\item 微分电路的特点
+		\begin{enumerate}
+			\item 输出信号与输入信号的关系是微分关系，输出电压是输入电压的变化率。
+			\item 对于高频信号的微分，微分电路表现出较好的性能。它能够放大高频信号的微小变化并滤除低频成分。
+			\item 微分电路通常用于信号处理、滤波、峰值检测等应用。
+		\end{enumerate}
+	\end{enumerate}
+\end{document}

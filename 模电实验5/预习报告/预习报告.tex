@@ -1,0 +1,117 @@
+\documentclass[a4paper,10pt,notitlepage]{article}
+\usepackage{ctex,geometry,graphicx,tikz,setspace,paralist,fancyhdr,caption}
+\geometry{
+	left=1.5cm,
+	right=1.5cm,
+	top=1.4cm,
+	bottom=2cm,}
+\newcommand{\rec}{
+	\begin{tikzpicture}[remember picture,overlay]
+		% 绘制边框
+		\draw[line width=1.2pt] ([xshift=0.5cm,yshift=0.5cm] current page.south west) rectangle ([xshift=-0.5cm,yshift=-0.8cm] current page.north east);
+	\end{tikzpicture}
+	
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\rec}  % 在页眉中绘制图形
+\fancyhead[L]{附录}
+\fancyhead[R]{实验八 \quad 波形发生电路}
+\fancyfoot[C]{\thepage}
+\begin{document}
+	\large
+	\onehalfspacing
+	\begin{figure}[h]
+		\raggedright
+		\includegraphics{1.png}
+	\end{figure}
+	\centering
+	{\Huge\textbf{模电实验报告}\par}
+	\vspace{0.2cm}
+	{\huge{实验内容：波形发生电路}\par}
+	\raggedright
+	\vspace{0.3cm}
+	\begin{centering}
+		{\large 院系：电子与信息工程学院\hfill 学号：22309080\hfill 审批：\hspace{2cm} \par
+			专业：通信工程\hfill 实验人：梁倍铭\hfill 日期：2023年11月30日 \par}
+	\end{centering}
+	\vspace{0.3cm}
+	\section*{一、方波发生电路}
+		仿真波形如图
+		\begin{figure}[h]
+			\centering
+			\begin{minipage}{0.3\textwidth}
+				\centering
+				\includegraphics[width=\textwidth]{2.png}
+				\caption*{图1 波形输出}
+			\end{minipage}
+			\qquad
+			\begin{minipage}{0.3\textwidth}
+				\centering
+				\begin{tabular}{|c|c|c|}
+					\hline
+					 & 频率(Hz) & 幅值(V) \\
+					\hline
+					仿真 & 388.8 & 6.47 \\
+					\hline 
+					实验 & \qquad & \qquad  \\
+					\hline
+				\end{tabular}
+				\caption*{表1 10k时的频率与幅值}
+			\end{minipage}
+			\qquad
+			\begin{minipage}{0.3\textwidth}
+				\centering
+				\begin{tabular}{|c|c|c|}
+					\hline
+					& 频率(Hz) & 幅值(V) \\
+					\hline
+					仿真 & 40.66 & 8.55 \\
+					\hline 
+					实验 & \qquad & \qquad  \\
+					\hline
+				\end{tabular}
+				\caption*{表2 110k时的频率与幅值}
+			\end{minipage}
+		\end{figure}
+		想要获得更低频率增大R即可
+	\section*{二、占空比可调的矩形波发生电路}
+	\begin{figure}[h]
+		\centering
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{3.png}
+			\caption*{图2 波形输出}
+		\end{minipage}
+		\qquad
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				& 频率(Hz) & 幅值(V) & 占空比(\%) \\
+				\hline
+				仿真 & 77.52 & 8.348 & 49.3 \\
+				\hline 
+				实验 & \qquad & \qquad & \qquad \\
+				\hline
+			\end{tabular}
+			\caption*{表3 观测数据}
+		\end{minipage}
+	\end{figure}
+	想要波形占空比更大，调节RP1使得正向充电的时间更长即可
+	\newpage
+	\section*{三、三角波发生电路}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.3\textwidth]{4.png}
+		\caption*{图3 波形输出}
+	\end{figure}
+	可以通过改变RP的阻值来改变波形频率
+	\section*{四、锯齿波发生电路}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.3\textwidth]{5.png}
+		\caption*{图4 波形输出}
+	\end{figure}
+可以通过改变滑动变阻器来改变频率变化范围，仿真结果为：24.57Hz--40.05Hz,实验结果为：
+\end{document}
