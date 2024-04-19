@@ -1,0 +1,49 @@
+27456 - 2024-04-15 23:58:17 - Subscriber_logmode.py - 46 - INFO: - 目标日期：2024-04-16
+27456 - 2024-04-15 23:58:18 - Subscriber_logmode.py - 50 - INFO: - 获取场地信息成功
+27456 - 2024-04-15 23:58:18 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980460, 391454, '场地1', 18]
+27456 - 2024-04-15 23:58:18 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980460, 391454, '场地1', 18]
+27456 - 2024-04-15 23:58:18 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:18 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:18 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980469, 391454, '场地10', 18]
+27456 - 2024-04-15 23:58:18 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980469, 391454, '场地10', 18]
+27456 - 2024-04-15 23:58:18 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980469, 391454, '场地10', 18]
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980470, 391454, '场地12', 18]
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980470, 391454, '场地12', 18]
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980470, 391454, '场地12', 18]
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980470, 391454, '场地12', 18]
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980471, 391454, '场地13', 18]
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980471, 391454, '场地13', 18]
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980471, 391454, '场地13', 18]
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980471, 391454, '场地13', 18]
+27456 - 2024-04-15 23:58:19 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980471, 391454, '场地13', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980472, 391454, '场地14', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980472, 391454, '场地14', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980472, 391454, '场地14', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980472, 391454, '场地14', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980472, 391454, '场地14', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980472, 391454, '场地14', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 98 - INFO: - {"backObject":null,"message":"预订失败，座位已被预订","object":null,"reason":"000017910419","result":"0"}
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980461, 391454, '场地2', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980461, 391454, '场地2', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980461, 391454, '场地2', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980461, 391454, '场地2', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980461, 391454, '场地2', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980461, 391454, '场地2', 18]
+27456 - 2024-04-15 23:58:20 - Subscriber_logmode.py - 85 - INFO: - 目标场地[2980461, 391454, '场地2', 18]

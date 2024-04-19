@@ -69,6 +69,7 @@ class Pay():
             da='param={"payid":2,"orderid":'+orderid+',"ctypeindex":0}&json=true'
             response2=requests.post(url=url,data=da,headers=headers,cookies=self.cookies)
             print(response2.text)
+            time.sleep(1)
     def pay_process(self):
         state=self.get_pay_list()
         if state==0:
@@ -79,5 +80,5 @@ class Pay():
             
             
 if __name__=="__main__":
-    pay=Pay("8938930d-8a10-456d-9e9e-21a9ee8160ad")
+    pay=Pay("4c5fe6bf-ee38-4164-83d2-bb46cb9df29d")
     pay.pay_process()
