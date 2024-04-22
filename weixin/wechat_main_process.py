@@ -55,7 +55,7 @@ def menu_process(xml_dict):
                         "FromUserName":xml_dict.get("ToUserName"),
                         "CreateTime":int(time.time()),
                         "MsgType":"text",
-                        "Content":"(当前为ai对话，发送*退出)\nAI"+answer
+                        "Content":"(当前为ai对话，发送*退出)\nAI:\n"+answer
                     }
                 }
                 response_xml=xmltodict.unparse(response_dic)
