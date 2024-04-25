@@ -5,9 +5,9 @@ import requests
 import datetime
 import time
 today=now_date=time.localtime().tm_mday
-session1="9d92d609-1142-4253-aa02-5f88f849c242"
-session2="9d92d609-1142-4253-aa02-5f88f849c242"
-session3="9d92d609-1142-4253-aa02-5f88f849c242"
+session1="9d887cd2-2232-4c1b-9e95-fa75ae341ff8"
+session2="9d887cd2-2232-4c1b-9e95-fa75ae341ff8"
+session3="9d887cd2-2232-4c1b-9e95-fa75ae341ff8"
 cookies1 = {
     "SESSION":session1,
     "from": "undefined",
@@ -74,7 +74,6 @@ for data in data_list_3:
 print(len(requests_list))
 print(today)
 while True:
-    if today==20:
         print("运行")
         response_list=grequests.map(requests_list)
         for i in range(len(response_list)):

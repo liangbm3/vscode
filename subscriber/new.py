@@ -5,7 +5,7 @@ import datetime
 import json
 target_time_list=["18","19","20","21"]
 cookies = {
-            "SESSION":"4c5fe6bf-ee38-4164-83d2-bb46cb9df29d",
+            "SESSION":"706da980-fa39-4b8d-b853-e526cedc2bc2",
             "from": "undefined",
             }
 now_hour=time.localtime().tm_hour
@@ -21,7 +21,7 @@ headers={
             "Cache-Control": "no-cache",
             "Connection": "keep-alive",
             "Pragma": "no-cache",
-            "Referer": "https://gym.sysu.edu.cn/product/show.html?id=35",
+            "Referer": "https://gym.sysu.edu.cn/product/show.html?id=522",
             "Sec-Fetch-Dest": "empty",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Site": "same-origin",
@@ -33,7 +33,7 @@ headers={
         }
 param={
     "s_date":subscribe_date,
-    "serviceid": "35",
+    "serviceid": "522",
     "_": str(round(int(time.time())*1000))
     }
 run_1=True

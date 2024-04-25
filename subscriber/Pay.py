@@ -80,5 +80,9 @@ class Pay():
             
             
 if __name__=="__main__":
-    pay=Pay("4c5fe6bf-ee38-4164-83d2-bb46cb9df29d")
-    pay.pay_process()
+    # pay1=Pay("c28559dc-c64a-43f3-825b-e5cdf2209fa2")
+    # pay2=Pay("706da980-fa39-4b8d-b853-e526cedc2bc2")
+    pay3=Pay("7eb41109-b4c3-4572-a0a2-5e4643f1a3ae")
+    # pay1.pay_process()
+    # pay2.pay_process()
+    pay3.pay_process()
